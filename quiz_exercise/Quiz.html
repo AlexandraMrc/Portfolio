@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+
+    <h2 class="animate__animated animate__tada">
+      Bine aţi venit la Quiz-ul de limba română.
+    </h2>
+
+    <br />
+    <form name="varsta">
+      <p>
+        In functie de varsta dumneavoastra veti primi un set de 6 intrebari de cultura generala din literatura universala.
+      </p>
+      <input type="text" placeholder="varsta" name="varsta" />
+      <input
+        type="button"
+        name="Verifica"
+        value="Verifica"
+        onclick="check_age()"
+      />
+    </form>
+
+  <!-- Age calculator-->
+
+<div class="container">
+  <form>
+    <div class="title">
+      <h4> Vârsta dumneavoastră:</h4>
+    </div>
+
+    <div class="block">
+      <lable id="titleDate">Data</lable>
+      <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1" maxlength="2">
+    </div>
+    <div class="block">
+      <lable id="titleMonth">Luna</lable>
+      <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2">
+    </div>
+      <div class="block">
+      <lable id="titleYear">An</lable> 
+      <input type="text" name="year" id="year" placeholder="yy" required="required" minlength="4" maxlength="4">
+    </div>
+
+    <input type="button" id="btnAge" name="submit" value="Submit" onclick="age()" />
+    <br>
+    <div id="age">
+      
+    </div>
+
+  </form>
+</div>
+
+
+
+    <p id="datetime"><span id="datetime"></span></p>
+
+    <h3>Urmeaza 5 intrebari cu diferite variante de raspuns.</h3>
+    <h4 class="animate__animated animate__flash">Succes!</h4>
+    <br /><br />
+    <form name="quiz">
+      <label>1. Cine a scris romanul "Ion"?</label>
+      <input type="text" name="raspuns_1" />
+      <input
+        type="button"
+        name="Verifica"
+        value="Verifica"
+        onclick="check_1()"
+      />
+      <br /><br />
+
+      <label
+        >2.Cum se numeste cartea scrisa de George Calinescu in care persoanejele
+        principale sunt Otilia si Felix?</label
+      >
+      <input type="text" name="raspuns_2" />
+      <input
+        type="button"
+        name="Verifica"
+        value="Verifica"
+        onclick="check_2()"
+      /><br /><br />
+
+      <label>3. Cine a fost Titu Maiorescu?</label><br />
+
+      <input type="radio" name="maiorescu" value="avocat" />
+      <label>avocat</label><br />
+
+      <input type="radio" name="maiorescu" value="romancier" />
+      <label>romancier</label><br />
+
+      <input type="radio" name="maiorescu" value="critic literar" />
+
+      <label>critic literar</label><br />
+      <input
+        type="button"
+        name="Verifica"
+        value="Verifica"
+        onclick="check_3()"
+      />
+      <br /><br />
+
+      <label
+        >4.Selectati numele autorului care a scris romanul realist "Crima si
+        pedeapsa".</label
+      ><br />
+      <select name="autor1">
+        <option value="value1">F.Dostoievski</option>
+        <option value="value2">Lev Tolstoi</option>
+        <option value="value3" selected="selected">Victor Hugo</option>
+      </select>
+      <input
+        type="button"
+        name="Verifica"
+        value="Verifica"
+        onclick="check_4()"
+      />
+      <br /><br />
+
+      <label>5.Cine a scris "La rascruce de vanturi"?</label><br />
+      <input type="checkbox" id="anne" value="anne" />
+      <label>Anne Bronte</label><br />
+      <input type="checkbox" id="emily" value="emily" />
+      <label>Emily Bronte</label><br />
+      <input type="checkbox" id="charlotte" value="charlotte" />
+      <label>Charlotte Bronte</label><br />
+      <input
+        type="button"
+        name="Verifica"
+        value="Verifica"
+        onclick="check_5()"
+      />
+      <br /><br />
+
+      <label
+        >6. Romanul "Maitreyi, scris de Mircea Eliade este un roman al
+        experientei.</label
+      ><br />
+      <input type="radio" name="daSauNu" value="da" /><label>DA</label><br />
+      <input type="radio" name="daSauNu" value="nu" /><label>NU</label><br />
+      <input
+        type="button"
+        name="Verifica"
+        value="Valideaza"
+        onclick="check_6()"
+      /><br /><br />
+    </form>
+    <script src="Quiz.js"></script>
+  </body>
+</html>

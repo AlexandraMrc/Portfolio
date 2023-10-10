@@ -1,0 +1,90 @@
+body,
+html {
+  height: 100%;
+  width: auto;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  text-align: center;
+  height: 100%;
+  max-width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: black;
+  font-family: "Lucida Sans" sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+form {
+  text-align: center;
+  background-color: rgb(243, 198, 130);
+  border-radius: 20px;
+  display: inline-block;
+  width: 30%;
+  margin-top: 50px;
+}
+
+.credentials {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: auto;
+}
+
+.credentials:hover {
+  color: rgb(145, 99, 99);
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 15px;
+  padding: 12px;
+  max-width: auto;
+  display: inline-block;
+  position: relative;
+  border: none;
+  background-color: rgb(247, 232, 205);
+}
+
+button[type="submit"] {
+  padding: 14px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(236, 142, 75);
+  border: none;
+  color: black;
+}
+
+button[type="submit"] a {
+  text-decoration: none;
+  color: black;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+#showPassBtn {
+  background: transparent;
+  border: 0;
+  color: blue;
+  cursor: pointer;
+}
+
+.imgContainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.avatar {
+  width: 120px;
+  height: 150px;
+}

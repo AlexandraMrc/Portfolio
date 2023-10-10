@@ -1,0 +1,100 @@
+/* stilizare pentru rightside  */
+
+.input-txt {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.left-input {
+  flex: 1;
+}
+
+.right-input {
+  flex: 1;
+}
+
+label[for="fname"] {
+  color: rgb(162, 160, 160);
+}
+
+label[for="mail"] {
+  color: rgb(162, 160, 160);
+}
+
+::placeholder {
+  color: black;
+}
+
+#message::placeholder {
+  color: grey;
+  font-size: 14px;
+}
+
+#lname::placeholder {
+  color: grey;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(212, 206, 206);
+}
+
+#message {
+  width: 470px;
+  padding: 0 30px 15px 10px;
+}
+
+input:focus {
+  border-color: blue;
+  cursor: pointer;
+}
+
+label[for="message"] {
+  font-weight: bold;
+}
+
+label[for="phone"] {
+  color: blue;
+}
+
+label[for="lname"] {
+  color: black;
+  font-weight: bold;
+}
+
+.web {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  color: grey;
+}
+
+label[for="website"] {
+  color: black;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+input[type="button"] {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(54, 16, 128);
+  color: white;
+  padding: 17px 35px;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(242, 145, 161);
+  color: blue;
+  font-size: 15px;
+  /* font-weight: bolder; */
+}

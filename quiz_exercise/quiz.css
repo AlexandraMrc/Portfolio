@@ -1,0 +1,107 @@
+body {
+  /* background-color: darkkhaki; */
+  background-image: url(https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+}
+
+h2,
+h3,
+h4 {
+  color: rgb(51, 12, 12);
+  text-align: center;
+}
+
+datetime.p {
+  color: rgb(85, 42, 165);
+  text-align: center;
+}
+
+.material-symbols-outlined {
+  color: black;
+}
+
+#book {
+  align-items: center;
+  width: 50px;
+  height: 80px;
+}
+
+/*Age calculator*/
+
+.container {
+  width: 550px;
+  height: auto;
+  min-height: 100px;
+  margin: 100px auto;
+  background-color: #ffd9c0;
+  border-radius: 5px;
+  border: 2px solid rgb(89, 56, 128);
+  opacity: 0.8;
+}
+
+.title {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  float: none;
+}
+
+.title h4 {
+  font-size: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  box-shadow: 0 2px #bababa;
+  color: rgb(53, 7, 15);
+}
+
+.block {
+  padding: 12px 13px;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.block input[type="text"] {
+  width: 80px;
+  margin: auto;
+  font-size: 15px;
+  padding: 12px 13px;
+  border: 2px solid black;
+}
+
+.block input[type="text"]:focus {
+  background-color: #ecdbdb;
+  border: 2px solid rgb(209, 150, 41);
+  outline: none;
+}
+
+#btnAge {
+  width: 150px;
+  background-color: BEADFA;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 35%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 12px 13px;
+  border: 2px solid black;
+}
+
+#btnAge:hover {
+  background-color: rgb(236, 215, 218);
+}
+
+#age {
+  display: block;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  font-family: verdana;
+  font-size: 15px;
+  font-weight: bold;
+}

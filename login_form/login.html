@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+
+<body class="body">
+    <form action="form" method="post">
+        <div class="container">
+
+            <h1>LOGIN</h1>
+            <div class="imgContainer">
+                <img src="pngegg.png" alt="avatar" class="avatar">
+            </div><br>
+            
+            <div class="credentials">
+            <label for="usname">Username</label>
+            <input type="text" placeholder="Enter Username" name="Username"><br><br>
+
+            <label for="psw">Password</label>
+            <input type="password" placeholder="Enter Password"  id="inputPass">
+    
+</div><br>
+    <input type="button" id="showPassBtn" value="Show Password" onclick="showPassword()"></inputbutton>
+        <br><br>
+
+            <button type="submit"><a href="/index.html">Login</a> </button><br><br>
+            <label><input type="checkbox" checked="checked" name="remember">Remember me</label><br><br>
+            <div class="forgot">
+                <label><a href="#">Forgot password?</label></a><br><br>
+
+            </div>
+
+
+        </div>
+        <br><br>
+    </form>
+</body>
+
+</html>
