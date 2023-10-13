@@ -21,8 +21,10 @@
       Bine aţi venit la Quiz-ul de limba română.
     </h2>
 
+    <p id="datetime"><span id="datetime"></span></p>
+
     <br />
-    <form name="varsta">
+    <!-- <form name="varsta">
       <p>
         In functie de varsta dumneavoastra veti primi un set de 6 intrebari de cultura generala din literatura universala.
       </p>
@@ -33,14 +35,14 @@
         value="Verifica"
         onclick="check_age()"
       />
-    </form>
+    </form> -->
 
   <!-- Age calculator-->
 
 <div class="container">
   <form>
     <div class="title">
-      <h4> Vârsta dumneavoastră:</h4>
+      <h4> Varsta dumneavoastra:</h4>
     </div>
 
     <div class="block">
@@ -61,17 +63,23 @@
     <div id="age">
       
     </div>
-
   </form>
 </div>
 
+<div class="btnStartTest">
+<input type="button" id="startTest"  name="start" value="Incepe testul" disabled onclick="incepeTestul()"/>
+</div>
 
+<br><br>
 
-    <p id="datetime"><span id="datetime"></span></p>
+<div class="hiddenQuestions">
+<form id="formHidden" style="display: none">
 
     <h3>Urmeaza 5 intrebari cu diferite variante de raspuns.</h3>
+
     <h4 class="animate__animated animate__flash">Succes!</h4>
     <br /><br />
+
     <form name="quiz">
       <label>1. Cine a scris romanul "Ion"?</label>
       <input type="text" name="raspuns_1" />
@@ -104,7 +112,6 @@
       <label>romancier</label><br />
 
       <input type="radio" name="maiorescu" value="critic literar" />
-
       <label>critic literar</label><br />
       <input
         type="button"
@@ -146,8 +153,7 @@
       />
       <br /><br />
 
-      <label
-        >6. Romanul "Maitreyi, scris de Mircea Eliade este un roman al
+      <label>6. Romanul "Maitreyi, scris de Mircea Eliade este un roman al
         experientei.</label
       ><br />
       <input type="radio" name="daSauNu" value="da" /><label>DA</label><br />
@@ -159,6 +165,9 @@
         onclick="check_6()"
       /><br /><br />
     </form>
+    
+  </form> 
+  </div>
     <script src="Quiz.js"></script>
   </body>
 </html>

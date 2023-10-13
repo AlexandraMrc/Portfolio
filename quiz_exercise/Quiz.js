@@ -26,18 +26,30 @@ function age() {
   let y = inputYear2 - inputYear;
 
   document.getElementById("age").innerHTML =
-    '"Vârsta dumneavoastră este ' +
-    y +
-    " Ani " +
-    m +
-    " luni si " +
-    d +
-    ' zile. "';
+    '"Aveti ' + y + " Ani " + m + " luni si " + d + ' zile. "';
+
+  let startTestButton = document.getElementById("startTest");
+  startTestButton.disabled = false;
 }
+
+// buton Incepe Testul
+
+let startTestButton = document.getElementById("startTest");
+// startTestButton.addEventListener("click", incepeTestul());
+
+function incepeTestul() {
+  const formQuestions = document.getElementById("formHidden");
+  if (formQuestions.style.display === "none") {
+    formQuestions.style.display = "block";
+  } else {
+    formQuestions.style.display = "none";
+  }
+}
+
 //-------------------------------------------------------
 
-// var today = new Date();
-// document.getElementById("datetime").innerHTML = today;
+var today = new Date();
+document.getElementById("datetime").innerHTML = today;
 
 function check_1() {
   var verifica = document.quiz.raspuns_1.value;
@@ -61,7 +73,7 @@ function check_2() {
 
 function check_3() {
   var verifica = document.quiz.maiorescu.value;
-  if (verifica == "critic literar") alert("Corect!");
+  if (verifica === "critic literar") alert("Corect!");
   else {
     alert("Mai incearca!");
   }
@@ -83,15 +95,15 @@ function check_5() {
   }
 }
 
-function check_age() {
-  var verifica = document.varsta.varsta.value;
-  verifica = parseInt(verifica);
-  if (verifica >= 15) alert("Succes!");
-  else {
-    var yearsLeft = 15 - varsta;
-    alert("Mai trebuie sa studiezi pentru a putea sustine testul.");
-  }
-}
+// function check_age() {
+//   var verifica = document.varsta.varsta.value;
+//   verifica = parseInt(verifica);
+//   if (verifica >= 15) alert("Succes!");
+//   else {
+//     var yearsLeft = 15 - varsta;
+//     alert("Mai trebuie sa studiezi pentru a putea sustine testul.");
+//   }
+// }
 
 function check_6() {
   var verifica = document.quiz.daSauNu.value;

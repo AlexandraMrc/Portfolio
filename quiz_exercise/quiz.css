@@ -1,7 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   /* background-color: darkkhaki; */
   background-image: url(https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
   background-size: cover;
+}
+
+form[name="varsta"] {
+  margin-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2,
@@ -11,9 +20,10 @@ h4 {
   text-align: center;
 }
 
-datetime.p {
-  color: rgb(85, 42, 165);
-  text-align: center;
+#datetime {
+  color: rgb(59, 43, 88);
+  text-align: right;
+  font-weight: bold;
 }
 
 .material-symbols-outlined {
@@ -104,4 +114,23 @@ datetime.p {
   font-family: verdana;
   font-size: 15px;
   font-weight: bold;
+  text-align: center;
+}
+
+.btnStartTest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#startTest {
+  padding: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.hiddenQuestions {
+  display: flex;
+  justify-content: center;
 }
