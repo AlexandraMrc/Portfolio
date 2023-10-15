@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  height: 100%;
+  background: rgb(247, 235, 237);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(79, 37, 118);
+  text-shadow: 2px 2px rgb(213, 213, 104);
+  font-size: 50px;
+}
+
+#inputField {
+  padding: 15px;
+  width: 350px;
+  border-radius: 5px;
+  color: grey;
+  border: 3px solid rgb(79, 37, 118);
+  font-size: 20px;
+}
+
+#inputField:hover {
+  background-color: rgb(231, 207, 176);
+  color: black;
+}
+
+#add-btn {
+  padding: 15px;
+  font-size: 20px;
+  width: 100px;
+  color: rgb(79, 37, 118);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: 3px solid rgb(79, 37, 118);
+}
+
+#add-btn:hover {
+  background-color: rgb(231, 207, 176);
+  font-weight: bold;
+}
+
+.to-dos {
+  color: rgb(24, 33, 131);
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  cursor: pointer;
+}
