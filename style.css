@@ -31,7 +31,7 @@ li a {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 13px;
-  margin: 20px 30px;
+  margin: 20px 10px;
 }
 
 li a:hover {
@@ -46,6 +46,20 @@ li a:hover {
   padding: 7px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+#btnCerts {
+  color: aqua;
+  border-color: rgb(222, 222, 221);
+  margin: 0 30px;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnCerts:hover {
+  background-color: rgb(33, 138, 138);
+  color: white;
 }
 
 #btnCV:hover {
