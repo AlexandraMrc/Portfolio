@@ -6,6 +6,11 @@
   position: relative;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
 #navbar {
   display: flex;
   flex-direction: row;
@@ -184,7 +189,7 @@ p a {
 
 /* pt telefon */
 @media (max-width: 800px) {
-  .container {
+  .flex-container {
     flex-direction: column;
   }
 }
