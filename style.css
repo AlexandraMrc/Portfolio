@@ -183,6 +183,8 @@ p a {
   ul {
     flex-direction: column;
     align-items: center;
+  }
+  li {
     margin: 0 5px;
   }
 }
